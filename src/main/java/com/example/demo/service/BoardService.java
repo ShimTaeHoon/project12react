@@ -40,7 +40,7 @@ public interface BoardService {
 	default BoardDTO entityToDto(Board entity) {
 		
 		// 작성자 필드
-		// Member 객체 -> String
+		// Member 객체 -> String 
 		
 		BoardDTO dto = BoardDTO.builder()
 				.no(entity.getNo())
@@ -51,7 +51,7 @@ public interface BoardService {
 				.regDate(entity.getRegDate())
 				.modDate(entity.getModDate())
 				// 추가
-//				.imgPath(entity.getImgPath())
+				.imgPath(entity.getImgPath())
 				.build();
 		return dto;
 	}
